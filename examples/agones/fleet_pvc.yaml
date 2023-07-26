@@ -58,6 +58,8 @@ spec:
               mountPath: /sd_dir
             resources:
               limits:
+                cpu: 1000m
+                memory: 15Gi
                 nvidia.com/gpu: "1"
           volumes:
             - name: stable-diffusion-storage
